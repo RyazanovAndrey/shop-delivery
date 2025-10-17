@@ -37,7 +37,6 @@ export default function Page() {
             <div className="grid grid-cols-3 gap-x-5">
                 <div className="border border-gray-200 w-h-80 h-80 overflow-hidden flex flex-col items-center">
                     <Image alt="" src={findProduct?.image} />
-                    <img src={findProduct?.image} alt="" width={300} height={300} />
                 </div>
                 <div className="space-y-5">
                     <div className="font-fugaz-one text-2xl">{findProduct?.title}</div>
