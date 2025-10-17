@@ -1,0 +1,329 @@
+{
+    "deals": [
+        {
+            "id": "123456",
+            "image": "/BestDeals/product-img1.png",
+            "title": "Fresh Eggplant & Cucumber Mix",
+            "price": 15,
+            "lessprice": "$28.99",
+            "review": "(17k)",
+            "sold": "18/35"
+        },
+        {
+            "id": "123457",
+            "image": "/BestDeals/product-img2.png",
+            "title": "Organic Beets with Greens",
+            "price": 13,
+            "lessprice": "$22.99",
+            "review": "(12k)",
+            "sold": "22/40"
+        },
+        {
+            "id": "123458",
+            "image": "/BestDeals/product-img3.png",
+            "title": "Mixed Fresh Vegetables Pack",
+            "price": 14,
+            "lessprice": "$25.99",
+            "review": "(8k)",
+            "sold": "15/25"
+        },
+        {
+            "id": "123459",
+            "image": "/BestDeals/product-img5.png",
+            "title": "Sun-Maid Raisins",
+            "price": 17,
+            "lessprice": "$32.99",
+            "review": "(5k)",
+            "sold": "8/15"
+        },
+        {
+            "id": "123461",
+            "image": "/BestDeals/product-img6.png",
+            "title": "Doritos Spicy Sweet Chili ",
+            "price": 29,
+            "lessprice": "$38.99",
+            "review": "(11k)",
+            "sold": "20/30"
+        }
+    ],
+    "recommended": [
+        {
+            "id": "123956",
+            "image": "/Recommend/product-img1.png",
+            "title": "C-500 Antioxidant Protect Dietary Supplement",
+            "price": 12,
+            "lessprice": "$24.99",
+            "review": "(17k)",
+            "sold": "18/35",
+            "sale": ""
+        },
+        {
+            "id": "1296523",
+            "image": "/Recommend/product-img2.png",
+            "title": "Marcel’s Modern Pantry Almond Unsweetened",
+            "price": 17,
+            "lessprice": "$33.99",
+            "review": "(17k)",
+            "sold": "22/40",
+            "sale": "50%"
+        },
+        {
+            "id": "6389652",
+            "image": "/Recommend/product-img3.png",
+            "title": "O Organics Milk, Whole, Vitamin D",
+            "price": 13,
+            "lessprice": "$26.99",
+            "review": "(17k)",
+            "sold": "20/32",
+            "sale": "New"
+        },
+        {
+            "id": "185641",
+            "image": "/Recommend/product-img4.png",
+            "title": "Whole Grains and Seeds Organic Bread",
+            "price": 9,
+            "lessprice": "$17.99",
+            "review": "(17k)",
+            "sold": "15/25",
+            "sale": "35%"
+        },
+        {
+            "id": "935896",
+            "image": "/Recommend/product-img2.png",
+            "title": "Lucerne Yogurt, Lowfat, Strawberry",
+            "price": 11,
+            "lessprice": "$21.99",
+            "review": "(17k)",
+            "sold": "18/35",
+            "sale": ""
+        },
+        {
+            "id": "1485741",
+            "image": "/Recommend/product-img6.png",
+            "title": "Nature Valley Whole Grain Oats and Honey Protein",
+            "price": 11,
+            "lessprice": "$22.99",
+            "review": "(17k)",
+            "sold": "25/40",
+            "sale": "50%"
+        },
+        {
+            "id": "963586",
+            "image": "/Recommend/product-img7.png",
+            "title": "Sun-Maid Raisins, Natural & Sweet",
+            "price": 8,
+            "lessprice": "$15.99",
+            "review": "(17k)",
+            "sold": "30/50",
+            "sale": "New"
+        },
+        {
+            "id": "163745",
+            "image": "/Recommend/product-img8.png",
+            "title": "Fresh Watermelon Juice Bottle",
+            "price": 6,
+            "lessprice": "$10.99",
+            "review": "(17k)",
+            "sold": "12/20",
+            "sale": "50%"
+        },
+        {
+            "id": "963741",
+            "image": "/Recommend/product-img9.png",
+            "title": "Tillamook Triple Cheddar Blend Cheese",
+            "price": 15,
+            "lessprice": "$29.99",
+            "review": "(17k)",
+            "sold": "14/28",
+            "sale": "New"
+        },
+        {
+            "id": "638596",
+            "image": "/Recommend/product-img10.png",
+            "title": "Good & Gather Farmed Atlantic Salmon",
+            "price": 19,
+            "lessprice": "$37.99",
+            "review": "(17k)",
+            "sold": "20/40",
+            "sale": "35%"
+        },
+        {
+            "id": "147852",
+            "image": "/Recommend/product-img2.png",
+            "title": "Market Pantry 41/50 Raw Tail-Off Large Raw Shrimp",
+            "price": 22,
+            "lessprice": "$42.99",
+            "review": "(17k)",
+            "sold": "18/30",
+            "sale": "50%"
+        },
+        {
+            "id": "365996",
+            "image": "/Recommend/product-img12.png",
+            "title": "Tropicana 100% Juice, Orange, No Pulp",
+            "price": 10,
+            "lessprice": "$19.99",
+            "review": "(17k)",
+            "sold": "25/35",
+            "sale": "New"
+        }
+    ],
+    "hotdeals": [
+        {
+            "id": 368541,
+            "image": "/HotDeals/product-img1.png",
+            "title": "Marcel’s Modern Pantry Almond Unsweetened",
+            "price": 16,
+            "lessprice": "$28.99",
+            "review": "(17k)",
+            "sold": "18/35",
+            "sale": "35%"
+        },
+        {
+            "id": 529642,
+            "image": "/HotDeals/product-img2.png",
+            "title": "O Organics Milk, Whole, Vitamin D",
+            "price": 19,
+            "lessprice": "$20.99",
+            "review": "(17k)",
+            "sold": "22/40",
+            "sale": "30%"
+        },
+        {
+            "id": 965345,
+            "image": "/HotDeals/product-img3.png",
+            "title": "Whole Grains and Seeds Organic Bread",
+            "price": 19,
+            "lessprice": "$32.99",
+            "review": "(17k)",
+            "sold": "15/25",
+            "sale": "New"
+        },
+        {
+            "id": 693541,
+            "image": "/HotDeals/product-img4.png",
+            "title": "Tropicana 100% Juice, Orange, No Pulp",
+            "price": 21,
+            "lessprice": "$30.99",
+            "review": "(17k)",
+            "sold": "8/15",
+            "sale": "50%"
+        },
+        {
+            "id": 941573,
+            "image": "/HotDeals/product-img2.png",
+            "title": "Tropicana 100% Juice, Orange, No Pulp",
+            "price": 15,
+            "lessprice": 29,
+            "review": "(17k)",
+            "sold": "20/30",
+            "sale": "New"
+        }
+    ],
+    "vendors": [
+        {
+            "id": 1,
+            "title": "Organic Market",
+            "time": "Delivery by 6:15am",
+            "off": "$5 off Snack & Candy",
+            "vendorMain": "/vendor-logo1.png",
+            "vendors": [
+                "/vendor-img3.png",
+                "/vendor-img4.png",
+                "/vendor-img5.png"
+            ],
+            "color" : "#F8EAE4"
+        },
+        {
+            "id": 2,
+            "title": "Safeway",
+            "time": "Delivery by 6:15am",
+            "off": "$5 off Snack & Candy",
+            "vendorMain": "/vendor-logo2.png",
+            "vendors": [
+                "/vendor-img3.png",
+                "/vendor-img4.png",
+                "/vendor-img5.png"
+            ],
+            "color" : "#DEE6F3"
+        },
+        {
+            "id": 3,
+            "title": "Food Max",
+            "time": "Delivery by 6:15am",
+            "off": "$5 off Snack & Candy",
+            "vendorMain": "/vendor-logo3.png",
+            "vendors": [
+                "/vendor-img3.png",
+                "/vendor-img4.png",
+                "/vendor-img5.png"
+            ],
+            "color" : "#DAF2DB"
+        },
+        {
+            "id": 4,
+            "title": "HRmart",
+            "time": "Delivery by 6:15am",
+            "off": "$5 off Snack & Candy",
+            "vendorMain": "/vendor-logo4.png",
+            "vendors": [
+                "/vendor-img3.png",
+                "/vendor-img4.png",
+                "/vendor-img5.png"
+            ],
+            "color" : "#EBF1DA"
+        },
+        {
+            "id": 5,
+            "title": "Lucky Supermarket",
+            "time": "Delivery by 6:15am",
+            "off": "$5 off Snack & Candy",
+            "vendorMain": "/vendor-logo5.png",
+            "vendors": [
+                "/vendor-img3.png",
+                "/vendor-img4.png",
+                "/vendor-img5.png"
+            ],
+            "color" : "#F4F6E6"
+        },
+        {
+            "id": 6,
+            "title": "Arico Farmer",
+            "time": "Delivery by 6:15am",
+            "off": "$5 off Snack & Candy",
+            "vendorMain": "/vendor-logo6.png",
+            "vendors": [
+                "/vendor-img3.png",
+                "/vendor-img4.png",
+                "/vendor-img5.png"
+            ],
+            "color" : "#E6F6F6"
+        },
+        {
+            "id": 7,
+            "title": "Farmer Market",
+            "time": "Delivery by 6:15am",
+            "off": "$5 off Snack & Candy",
+            "vendorMain": "/vendor-logo7.png",
+            "vendors": [
+                "/vendor-img3.png",
+                "/vendor-img4.png",
+                "/vendor-img5.png"
+            ],
+            "color" : "#F6E6F6"
+        },
+        {
+            "id": 8,
+            "title": "Foodsco",
+            "time": "Delivery by 6:15am",
+            "off": "$5 off Snack & Candy",
+            "vendorMain": "/vendor-logo8.png",
+            "vendors": [
+                "/vendor-img3.png",
+                "/vendor-img4.png",
+                "/vendor-img5.png"
+            ],
+            "color" : "#F8EAE4"
+        }
+    ]
+}

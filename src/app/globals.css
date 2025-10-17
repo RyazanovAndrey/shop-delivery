@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: var(--font-fugaz-one);
+  --font-fugaz-one: var(--font-fugaz-one);
+  --color-green-bg: #26a35f;
+  --color-green-light: #e0f9e4;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+.anim-slider-top-1 {
+  opacity: 0;
+  animation: goTop 0.5s linear forwards;
+}
+
+.anim-slider-top-2 {
+  opacity: 0;
+  animation: goTop 0.5s linear forwards;
+  animation-delay: .3s;
+}
+
+.anim-slider-top-3 {
+  opacity: 0;
+  animation: goTop 0.5s linear forwards;
+  animation-delay: .6s;
+}
+
+.anim-slider-scale {
+  opacity: 0;
+  animation: scaleImage 0.5s ease-in-out forwards;
+  animation-delay: .5s;
+}
+
+.prev-btn,
+.next-btn {
+  opacity: 0.8;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: 10px;
+  cursor: pointer;
+  z-index: 40;
+}
+
+.next-btn {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 10px;
+  cursor: pointer;
+  z-index: 40;
+}
+
+.offers-bg {
+  position: relative;
+}
+
+.offers-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background-image: url('../../public//offer-shape.png');
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  background-size: cover;
+}
+
+/* sticker-product */
+
+.sticker-round {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+@keyframes goTop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleImage {
+  0% {
+    scale: 0;
+    opacity: 0;
+  }
+  70% {
+    scale: 1;
+    opacity: 1.2;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
