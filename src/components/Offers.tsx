@@ -19,9 +19,9 @@ function Offers() {
     ]
 
     return (
-        <div className='grid grid-cols-2 gap-x-5'>
+        <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
             {offersList.map((item, i) => (
-                <div key={i} className="flex items-center gap-x-5 bg-green-bg rounded-2xl p-5 offers-bg">
+                <div key={i} className="flex flex-wrap items-center gap-x-5 bg-green-bg rounded-2xl p-5 offers-bg">
                     <Image src={item.image} alt='' />
                     <div className="space-y-6">
                         <div className="font-fugaz-one text-white text-3xl">{item.title}</div>

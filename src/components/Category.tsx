@@ -10,12 +10,23 @@ function CategorySLider() {
     return (
         <Swiper
             spaceBetween={20}
-            slidesPerView={8}
+            slidesPerView={3}
             grabCursor={true}
             autoplay={{delay: 1500}}
             modules={[Autoplay]}
             speed={800}
             loop
+            breakpoints={{
+               640: {
+                slidesPerView: 4
+               },
+               768: {
+                slidesPerView: 5
+               },
+               995: {
+                slidesPerView: 8
+               }
+            }}
             className='my-10'
         >
             {categoryList.map((item, i) => (

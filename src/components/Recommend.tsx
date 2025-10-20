@@ -13,7 +13,7 @@ function Recommend() {
   return (
     <div className='py-20'>
       <div className="font-fugaz-one text-3xl">Recommmended for you</div>
-      <div className="grid grid-cols-5 mt-5 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-5 mt-5 gap-5">
         {recommendedList.recommended.map(item => (
           <CardDefault key={item.id} {...item} addToCart={toCartList} toWhishList={toWhishList} isAddToWish={wishList.some(wish => wish.id == item.id)} />
         ))}

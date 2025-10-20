@@ -6,7 +6,7 @@ function TopVendors() {
     return (
         <div className='my-20'>
             <div className="font-fugaz-one text-3xl mb-20">Weekly Top Vendors</div>
-            <div className="grid grid-cols-4 gap-x-5 gap-y-15">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-15">
                 {vendorsList.vendors.map(item => (
                     <div key={item.id} className={`relative top-0 rounded-2xl p-5 flex flex-col items-center gap-y-5 cursor-pointer hover:-top-1 transition-all`} style={{ backgroundColor: `${item.color}` }}>
                         <div className={`size-30 -mt-15 rounded-full flex items-center justify-center`} style={{ backgroundColor: `${item.color}` }}>

@@ -6,7 +6,7 @@ import { ChevronRight } from 'lucide-react'
 
 function Banners() {
     return (
-        <div className='grid grid-cols-4 gap-x-5'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
             {bannerList.map((item, i) => (
                 <div key={i} className="relative">
                     <Image src={item.image} alt='' />

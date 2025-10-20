@@ -2,6 +2,7 @@
 import { ShoppingCart, Star, Store } from 'lucide-react'
 import Image from 'next/image'
 import { useCartList } from '@/store/useCart'
+import Link from 'next/link'
 
 export interface IProps {
     id: string,
@@ -32,7 +33,7 @@ function Card({ id, image, title, price, lessprice, review, sold }: IProps) {
                 <div className="">/Qty</div>
             </div>
             <div className="flex items-center gap-x-2"><Star color='#F1B20A' />{review}</div>
-            <div className="font-fugaz-one">{title}</div>
+            <Link href={`/shop/${id}`} className='font-fugaz-one'>{title}</Link>
             <div className="text-gray-300 flex items-center gap-x-2"><Store color='#26a35f' size={16} />By Lucky Supermarket</div>
             <div className="font-fugaz-one text-gray-400 text-sm">Sold {sold}</div>
         </div>

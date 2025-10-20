@@ -20,12 +20,25 @@ export default function NewArrivals() {
     return (
         <div className="mt-20">
             <div className="font-fugaz-one text-3xl mb-10">New arrivals</div>
-            <div className="">
                 <Swiper
                     spaceBetween={20}
-                    slidesPerView={5}
+                    slidesPerView={1.5}
                     loop
                     grabCursor
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 4,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 5,
+                            spaceBetween: 20,
+                        },
+                    }}
                 >
                     {arrivalsList.recommended.map(item => (
                         <SwiperSlide key={item.id}>
@@ -33,8 +46,7 @@ export default function NewArrivals() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </div>
-        </div>
+        </div >
 
     );
 };

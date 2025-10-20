@@ -1,3 +1,5 @@
+import CheckoutList from "@/components/CheckoutList";
+
 export default function Page() {
     return (
         <div className="">
@@ -30,6 +32,10 @@ export default function Page() {
                             <label htmlFor="check-1" className="cursor-pointer">Save this information for next time</label>
                         </div>
                     </div>
+                </div>
+                <div className="border border-gray-200 p-5 rounded-sm">
+                    <div className="font-fugaz-one mb-5">Order summary</div>
+                    <CheckoutList />
                 </div>
             </div>
         </div>

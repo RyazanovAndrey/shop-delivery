@@ -11,7 +11,7 @@ function FreeShipping() {
     ]
 
     return (
-        <div className='grid grid-cols-4 gap-x-5 my-20'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 my-20'>
             {shippingList.map((item, i) => (
                 <div key={i} className="bg-green-light rounded-2xl flex items-center p-3 gap-x-5">
                     <div className=" bg-green-bg w-[80px] h-[50px] rounded-full flex items-center justify-center">

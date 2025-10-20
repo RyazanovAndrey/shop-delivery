@@ -18,16 +18,21 @@ function Deals() {
             <Swiper
                 modules={[Autoplay]}
                 spaceBetween={20}
-                slidesPerView={2}
+                slidesPerView={1.5}
                 grabCursor={true}
                 autoplay={{ delay: 2500 }}
                 speed={500}
                 loop
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2
+                    }
+                }}
                 className='mt-10'
             >
                 {dealsList.map((item, i) => (
                     <SwiperSlide key={i}>
-                        <div className="rounded-2xl overflow-hidden flex items-center gap-x-5 p-5 h-[200px]" style={{ backgroundImage: `url('${item.bg}')` }}>
+                        <div className="flex flex-col rounded-2xl items-center gap-5 p-5 min-h-[200px]" style={{ backgroundImage: `url('${item.bg}')` }}>
                             <Image alt='' src={item.image} />
                             <div className="space-y-5">
                                 <div className="font-fugaz-one text-2xl ">{item.title}</div>
@@ -39,8 +44,8 @@ function Deals() {
                 ))}
             </Swiper>
             <div className='mt-20'>
-                <div className="grid grid-cols-5 gap-x-5">
-                    {dealsItems.deals.map(item => (
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-5">
+                    {dealsItems.recommended.slice(7, 12).map(item => (
                         <Card key={item.id} {...item} />
                     ))}
                 </div>

@@ -33,7 +33,7 @@ export default function RootLayout({
         <main className="container mx-auto px-3">
           {children}
         </main>
-        <Toaster position="bottom-right" reverseOrder={false} />
+        <Toaster position="top-center" reverseOrder={false} />
         <Footer />
       </body>
     </html>

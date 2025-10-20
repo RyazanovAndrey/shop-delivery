@@ -4,6 +4,8 @@ import recommendedList from '../../../data.json';
 import { BadgeDollarSign, Heart, PackageOpen, ShieldAlert, ShoppingBag, ShoppingCart, Undo2 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
+import { useCartList } from "@/store/useCart";
+import { title } from "process";
 
 type IProps = {
     id: string,
@@ -16,16 +18,13 @@ type IProps = {
     sale?: string
 } | undefined
 
-// export function generateStaticParams() {
-//     return recommendedList.recommended.map(item => ({
-//         id: item.id
-//     }))
-// }
 
 export default function Page() {
 
     const { slug } = useParams<{ slug: string }>()
     const [count, setCount] = useState(1)
+
+    const addToCartList = useCartList((state) => state.addToCartList)
 
     const findProduct: IProps = recommendedList.recommended.find(item => item.id == slug)
 
@@ -58,7 +57,7 @@ export default function Page() {
                                 <span>{count}</span>
                                 <button onClick={countPlus} className="w-10 h-10 bg-gray-200 rounded-md flex items-center justify-center cursor-pointer">+</button>
                             </div>
-                            <button onClick={() => { }} className='flex justify-center gap-x-2 bg-green-light text-green-bg w-full rounded-xl cursor-pointer hover:bg-green-bg hover:text-white transition-all p-3 mt-auto'><ShoppingCart />Add to cart</button>
+                            <button onClick={() => {}} className='flex justify-center gap-x-2 bg-green-light text-green-bg w-full rounded-xl cursor-pointer hover:bg-green-bg hover:text-white transition-all p-3 mt-auto'><ShoppingCart />Add to cart</button>
                             <button onClick={() => { }} className='flex justify-center gap-x-2 bg-green-light text-green-bg w-full rounded-xl cursor-pointer hover:bg-green-bg hover:text-white transition-all p-3 mt-auto'><Heart />Add to whishlist</button>
                         </div>
                     </div>

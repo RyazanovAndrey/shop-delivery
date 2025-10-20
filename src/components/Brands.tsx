@@ -22,9 +22,20 @@ function Brands() {
             <div className="text-4xl font-fugaz-one text-center mb-10">Shop by Brands</div>
             <Swiper
                 spaceBetween={20}
-                slidesPerView={7}
+                slidesPerView={1.5}
                 loop
                 grabCursor
+                breakpoints={{
+                    576: {
+                        slidesPerView: 3
+                    },
+                    768: {
+                        slidesPerView: 4
+                    },
+                    995: {
+                        slidesPerView: 7
+                    }
+                }}
             >
                 {brandsList.map((item, i) => (
                     <SwiperSlide key={i}>

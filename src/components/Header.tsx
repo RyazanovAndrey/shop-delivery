@@ -13,6 +13,7 @@ function Header() {
     const [search, setsearch] = useState('')
 
     const totalWish = useWishList((state) => state.wishlist)
+    const totalHeart = totalWish.length
     const cart = useCartList((state) => state.cart)
 
     const cartTotal = cart.reduce((total, item) => total + item.count, 0)
@@ -58,10 +59,10 @@ function Header() {
                         </div>
                         <button className='border-gray-200 border px-4 rounded-md cursor-pointer text-green-bg flex items-center gap-x-3 bg-white'><MapPin />New York</button>
                     </div>
-                    <div className="flex items-center gap-x-2">
+                    <div className="hidden md:flex items-center gap-x-2">
                         <Link href={'/account/wishlist'} className='relative size-10 flex items-center justify-center'>
                             <Heart />
-                            <div className="absolute top-0 right-0 size-4 text-[10px] bg-green-bg flex items-center justify-center text-white rounded-full">{totalWish.length}</div>
+                            <div className="absolute top-0 right-0 size-4 text-[10px] bg-green-bg flex items-center justify-center text-white rounded-full">{totalHeart}</div>
                         </Link>
                         <div className="flex items-center relative size-10 justify-center">
                             <Link href={'/account/cart'} className='size-8 flex items-center justify-center'><ShoppingCart /></Link>
@@ -73,7 +74,7 @@ function Header() {
 
             <div className="border border-gray-200 bg-white">
                 <div className="container mx-auto px-3 flex items-center justify-between">
-                    <NavMenu />
+                    <NavMenu totalWish={totalHeart} cartTotal={cartTotal} />
                     <div className="flex items-center gap-x-2 bg-green-bg text-white py-2 px-4 cursor-pointer"><Phone size={18} />01-234-256-600</div>
                 </div>
             </div>
