@@ -27,12 +27,12 @@ function Header() {
 
             <div className="bg-green-bg w-full">
                 <div className="container mx-auto px-3 py-2 flex justify-between items-center">
-                    <div className="flex text-sm">
+                    <div className="flex text-sm items-center">
                         <Link href={'/'} className='text-white hover:underline border-r-1 border-white pr-5'>About</Link>
                         <Link href={'/'} className='text-white hover:underline border-r-1 border-white pl-5 pr-5'>Free Delivery</Link>
                         <Link href={'/'} className='text-white hover:underline pl-5'>Returns Policy</Link>
                     </div>
-                    <div className="flex text-sm">
+                    <div className="flex text-sm items-center">
                         <Link href={'/'} className='text-white hover:underline border-r-1 border-white pr-5'>Help Center</Link>
                         <Link href={'/account'} className='text-white hover:underline pl-5'>My Account</Link>
                     </div>
@@ -40,10 +40,10 @@ function Header() {
             </div>
 
             <div className="py-5 bg-green-light">
-                <div className="container mx-auto px-3 flex justify-between">
+                <div className="container mx-auto px-3 flex justify-between items-center gap-2">
                     <Link href={'/'} className='font-fugaz-one text-3xl'>Shop<span className='text-green-bg'>Delivery</span></Link>
                     <div className="flex gap-x-3">
-                        <div className=" relative border rounded-md border-gray-300 flex items-center justify-between bg-white min-w-[500px]">
+                        <div className=" relative border rounded-md border-gray-300 flex items-center justify-between bg-white md:min-w-[500px]">
                             <input value={search} onChange={e => setsearch(e.target.value)} type="text" placeholder='search propduct or brand' className='pl-3 outline-0 w-full' />
                             <button className='size-10 bg-green-bg flex items-center justify-center cursor-pointer'><Search color='white' /></button>
                             {search && (
@@ -57,7 +57,7 @@ function Header() {
                                 </div>
                             )}
                         </div>
-                        <button className='border-gray-200 border px-4 rounded-md cursor-pointer text-green-bg flex items-center gap-x-3 bg-white'><MapPin />New York</button>
+                        <button className='hidden border-gray-200 border px-4 rounded-md cursor-pointer text-green-bg md:flex items-center gap-x-3 bg-white'><MapPin />New York</button>
                     </div>
                     <div className="hidden md:flex items-center gap-x-2">
                         <Link href={'/account/wishlist'} className='relative size-10 flex items-center justify-center'>

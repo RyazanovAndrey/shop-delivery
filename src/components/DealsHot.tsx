@@ -22,23 +22,34 @@ function DealsHot() {
     return (
         <div className="">
             <div className="font-fugaz-one text-3xl mb-8">Todays Hot Deals</div>
-            <div className='flex gap-x-5'>
-                <div className="flex flex-col gap-y-5 items-center bg-green-bg rounded-2xl p-5 offers-bg w-1/4">
+            <div className='grid grid-cols-2 md:grid-cols-[25%_75%] gap-5'>
+                <div className="gap-y-5 items-center bg-green-bg rounded-2xl p-5 offers-bg">
                     <Image src={HotDeals} alt='' />
                     <div className="font-fugaz-one text-white text-3xl">Fresh Vagetables</div>
                     <p className='text-white'>Get the freshest vegetables delivered to your doorstep. Healthy,
                         organic, and full of flavor!</p>
                     <ButtonRight variant='white' icon={<ChevronRight />} >Shop now</ButtonRight>
                 </div>
-                <div className="w-3/4">
+                <div className="">
                     <Swiper
                         modules={[Autoplay]}
                         spaceBetween={20}
-                        slidesPerView={4}
+                        slidesPerView={1}
                         loop
                         grabCursor
                         autoplay={{ delay: 2000 }}
                         speed={500}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2
+                            },
+                            768: {
+                                slidesPerView: 2
+                            },
+                            995: {
+                                slidesPerView: 3
+                            }
+                        }}
                     >
                         {HotDealsList.deals.map((item, i) => (
                             <SwiperSlide key={i} className=''>

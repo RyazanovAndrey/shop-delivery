@@ -22,8 +22,8 @@ function ShopList() {
     })
 
     return (
-        <div className="mt-10 grid grid-cols-[400px_1fr] gap-5">
-            <div className="sticky top-45 border border-gray-200 p-5 rounded-2xl h-[200px]">
+        <div className="mt-10 grid lg:grid-cols-[400px_1fr] gap-5">
+            <div className="sticky top-45 border border-gray-200 p-5 rounded-2xl h-[200px] bg-white">
                 <div className="font-fugaz-one">Filter products</div>
                 <div className="flex gap-x-2">
                     <input type="radio" value={'All'} id='radio-1' name='radio' onChange={handleFilter} />
@@ -42,7 +42,7 @@ function ShopList() {
                     <label htmlFor="check-4" className='cursor-pointer'>New</label>
                 </div>
             </div>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {filterProduct.slice(0, 9).map(item => (
                     <CardDefault key={item.id} {...item} addToCart={toCartList} toWhishList={toWhishList} isAddToWish={wishList.some(wish => wish.id == item.id)} />
                 ))}
